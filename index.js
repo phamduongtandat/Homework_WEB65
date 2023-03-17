@@ -14,7 +14,7 @@ fs.writeFile('products.json', JSON.stringify(products), () => { console.log('don
 
 
 const serverListener = (req, res) => {
-    //const userId = req.url.split("/").pop();
+
     switch (req.url) {
         case "/": {
             res.end('LESSION-1: ');
